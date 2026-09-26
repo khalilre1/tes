@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #fef3c7;
+  --color-brand-primary: #b45309;
+  --color-brand-primary-hover: #92400e;
+  --color-brand-secondary: #fef9c3;
+  --color-brand-secondary-hover: #fde047;
+  --color-brand-text: #451a03;
+  
+  --font-serif: 'Merriweather', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  @apply bg-brand-bg text-brand-text font-sans antialiased;
+}
+
+.btn-shadow {
+  @apply shadow-md shadow-brand-text/10 transition-all duration-300;
+}
+.btn-shadow:hover {
+  @apply shadow-lg shadow-brand-text/20 transform -translate-y-1;
+}
