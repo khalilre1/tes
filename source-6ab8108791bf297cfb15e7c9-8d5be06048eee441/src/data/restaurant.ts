@@ -47,3 +47,6 @@ export const restaurant = {
     }
   ]
 };
+
+// التصدير المطلوب لحل مشكلة Netlify Build
+export const menu = restaurant.menuCategories;
